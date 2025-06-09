@@ -109,6 +109,17 @@ Grad-CAM을 통해 유루증 예측의 시각적 근거를 확인할 수 있으�
 
 ![유루증 Grad-CAM 결과](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/Grad-CAM3.png?raw=true)
 
+### 정상(유루증 없음) 안구 이미지에 대한 Grad-CAM 시각화
+
+아래 이미지는 유루증이 없는 반려동물의 정상 안구 이미지(왼쪽)와 해당 이미지에 대해 Grad-CAM을 적용한 히트맵(오른쪽)을 비교한 것입니다.
+
+- Grad-CAM 결과를 보면 붉은 영역이 거의 없고, 전체적으로 **푸른색 계열**이 분포되어 있어 모델의 주목도가 낮았음을 나타냅니다.
+- 이는 모델이 눈 주변에 뚜렷한 질환 징후가 없다고 판단했음을 의미하며, **정상 판단이 타당하게 이루어졌음을 확인**할 수 있습니다.
+- Grad-CAM은 단순히 Positive 판단뿐 아니라 **Negative 판단의 신뢰성**을 확보하는 데도 유용합니다.
+
+![정상 유루증 Grad-CAM 결과](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/Grad-CAM2.png?raw=true)
+
+
 ## 활용 방안
 
 - **모바일 자가진단 앱**: 보호자가 스마트폰으로 반려동물 눈을 촬영해 질환 예측 가능
