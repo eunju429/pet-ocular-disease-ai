@@ -59,7 +59,7 @@ Positive(질환 있음) 클래스에서는 충혈, 백태, 혼탁 등 결막염�
 
 ![결막염 이미지 예시](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/sample-eyes.png?raw=true)
 
-### 🔥 결막염 이미지에 대한 Grad-CAM 시각화 결과
+### 결막염 이미지에 대한 Grad-CAM 시각화 결과
 
 아래 이미지는 결막염이 있는 반려동물 안구 이미지에 대해 **Grad-CAM 기법**을 적용한 히트맵입니다.  
 딥러닝 모델이 예측 시 주목한 영역을 색상으로 시각화한 것으로, 다음과 같은 해석이 가능합니다:
@@ -72,7 +72,7 @@ Grad-CAM 시각화를 통해 모델이 실제로 결막염의 시각적 특징�
 
 ![결막염 Grad-CAM 히트맵](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/heatmap.png?raw=true)
 
-### 🧠 결막염 이미지 원본 vs. Grad-CAM 결과 비교
+### 결막염 이미지 원본 vs. Grad-CAM 결과 비교
 
 아래는 결막염이 의심되는 반려동물의 안구 이미지(왼쪽)와 해당 이미지에 대해 Grad-CAM을 적용한 시각화 결과(오른쪽)입니다.
 
@@ -85,7 +85,7 @@ Grad-CAM 시각화를 통해 모델이 실제로 결막염의 시각적 특징�
 
 ---
 
-### 💧 유루증(Tear Stain) 안구 이미지 예시
+### 유루증(Tear Stain) 안구 이미지 예시
 
 아래 이미지는 유루증(Tear Stain Disorder)이 있는 반려동물의 안구 이미지(왼쪽, Positive)와  
 정상 상태의 안구 이미지(오른쪽, Negative)를 비교한 예시입니다.
@@ -97,6 +97,17 @@ Grad-CAM 시각화를 통해 모델이 실제로 결막염의 시각적 특징�
 
 ![유루증 이미지 예시](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/sample-eyes1.png?raw=true)
 
+### 유루증 이미지에 대한 Grad-CAM 시각화 결과
+
+아래 이미지는 유루증이 있는 반려동물 안구 이미지에 대해 **Grad-CAM 기법**을 적용한 히트맵입니다.
+
+- 모델이 주목한 영역은 **눈 주변의 습기**, **눈물자국**, **갈색 착색 부위**와 관련되어 있으며,
+- 붉은 계열이 강조된 부분일수록 모델이 해당 영역을 유루증 예측 근거로 삼았다는 것을 의미합니다.
+- 반면, 푸른색 계열은 모델의 주목도가 낮은 영역으로, 배경이나 특징이 적은 부분입니다.
+
+Grad-CAM을 통해 유루증 예측의 시각적 근거를 확인할 수 있으며, 모델이 실제 병변 부위에 주목했는지 검증하는 데 도움이 됩니다.
+
+![유루증 Grad-CAM 결과](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/Grad-CAM3.png?raw=true)
 
 ## 활용 방안
 
