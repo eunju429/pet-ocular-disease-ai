@@ -56,9 +56,7 @@ AI Hub에서 제공하는 반려동물 안구 질환 이미지 데이터를 활�
 
 아래는 모델 학습에 사용된 Positive(질환 있음) 및 Negative(질환 없음) 클래스의 대표 이미지입니다.
 
-![안구 이미지 예시](https://github.com/eunju429/반려동물-안구-질환-AI/blob/main/샘플-눈.png?raw=true)
-
-
+!https://github.com/eunju429/pet-ocular-disease-ai/blob/main/sample-eyes.png
 
 ---
 
@@ -83,7 +81,7 @@ AI Hub에서 제공하는 반려동물 안구 질환 이미지 데이터를 활�
 
 ---
 
-## 🛠 실행 방법
+## 실행 방법
 
 ```bash
 # 1. 필수 패키지 설치
