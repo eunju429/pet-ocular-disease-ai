@@ -18,9 +18,6 @@ AI Hub에서 제공하는 반려동물 안구 질환 이미지 데이터를 활�
 
 ---
 
-
----
-
 ## 사용 데이터
 
 - **출처**: [AI Hub 반려동물 안구 질환 이미지 데이터](https://www.aihub.or.kr/aihubdata/data/view.do?dataSetSn=562)
