@@ -119,6 +119,27 @@ Grad-CAM을 통해 유루증 예측의 시각적 근거를 확인할 수 있으�
 
 ![정상 유루증 Grad-CAM 결과](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/Grad-CAM2.png?raw=true)
 
+---
+### 전체 예측 모델 개발 흐름도
+
+아래 플로우차트는 반려동물 안구 이미지 데이터를 활용한 **결막염/유루증 예측 AI 모델**의 전체 처리 과정을 요약한 것입니다.
+
+- 데이터셋 준비부터 전처리, 모델 학습, 예측, 시각화, 해석까지의 **딥러닝 기반 워크플로우**를 시각적으로 정리했습니다.
+- 이 흐름은 실제 서비스화 가능성을 고려한 구조로, 확장성과 실용성을 동시에 확보할 수 있습니다.
+
+![전체 모델 구조도](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/flowchart.png?raw=true)
+
+### 🔍 모델 학습 및 해석 과정 세부 흐름도
+
+다음 플로우차트는 주요 단계(전처리, 학습, 예측, 해석)에 대한 **세부 처리 절차**를 정리한 것입니다.
+
+- 이미지 전처리 단계에서는 리사이즈, 정규화, 라벨 매핑 등의 작업을 수행하고,
+- 학습 단계에서는 ResNet-18 기반 CNN 모델을 `CrossEntropyLoss`와 `Adam` 옵티마이저로 학습하며,
+- 예측된 결과는 **Softmax 확률**, **Confusion Matrix**, **F1 Score** 등으로 평가됩니다.
+- 마지막으로 Grad-CAM을 통해 예측 근거를 시각화하고, 질환 여부에 대한 해석 가능성을 높입니다.
+
+![세부 학습 구조도](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/flowchart2.png?raw=true)
+
 
 ## 활용 방안
 
