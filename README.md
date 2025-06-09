@@ -59,6 +59,20 @@ Positive(질환 있음) 클래스에서는 충혈, 백태, 혼탁 등 결막염�
 
 ![결막염 이미지 예시](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/sample-eyes.png?raw=true)
 
+---
+
+### 🔥 결막염 이미지에 대한 Grad-CAM 시각화 결과
+
+아래 이미지는 결막염이 있는 반려동물 안구 이미지에 대해 **Grad-CAM 기법**을 적용한 히트맵입니다.  
+딥러닝 모델이 예측 시 주목한 영역을 색상으로 시각화한 것으로, 다음과 같은 해석이 가능합니다:
+
+- **🔴 붉은색 계열**: 모델이 가장 집중한 영역 (충혈, 백태 등 염증 부위)
+- **🟡 노란~초록 계열**: 중간 정도의 중요도
+- **🔵 푸른색 계열**: 모델이 거의 주목하지 않음
+
+Grad-CAM 시각화를 통해 모델이 실제로 결막염의 시각적 특징을 기반으로 예측했는지를 파악할 수 있습니다.
+
+![결막염 Grad-CAM 히트맵](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/heatmap.png?raw=true)
 
 
 ---
@@ -81,19 +95,5 @@ Positive(질환 있음) 클래스에서는 충혈, 백태, 혼탁 등 결막염�
 
 ---
 
-
----
-
-## 실행 방법
-
-```bash
-# 1. 필수 패키지 설치
-pip install -r requirements.txt
-
-# 2. 모델 학습
-python train_model.py
-
-# 3. Grad-CAM 시각화 실행
-python visualize_gradcam.py
 
 
