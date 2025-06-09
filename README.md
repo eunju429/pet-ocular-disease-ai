@@ -55,8 +55,7 @@ AI Hub에서 제공하는 반려동물 안구 질환 이미지 데이터를 활�
 ### 결막염(Conjunctivitis) 안구 이미지
 
 아래 이미지는 **결막염 유무(Positive/Negative)** 에 따른 반려동물의 안구 상태를 비교한 예시입니다.  
-Positive(질환 있음) 클래스에서는 충혈, 백태, 혼탁 등 결막염의 특징이 시각적으로 뚜렷하게 나타나며,  
-Negative(정상) 클래스는 맑고 윤기 있는 각막 구조를 보입니다.
+Positive(질환 있음) 클래스에서는 충혈, 백태, 혼탁 등 결막염의 특징이 시각적으로 뚜렷하게 나타나며, Negative(정상) 클래스는 맑고 윤기 있는 각막 구조를 보입니다.
 
 ![결막염 이미지 예시](https://github.com/eunju429/pet-ocular-disease-ai/blob/main/sample-eyes.png?raw=true)
 
